@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+    <title>Document</title>
+</head>
+<body>
+  
+    <header>
+        <div class="text-box">
+        <table>
+          <td><img src='logo.png' width="150" height="150"></td>
+          <td><h1 id="title">GOVT HOLKAR SCIENCE COLLEGE INDORE</h1><hr>
+            <p id="description">PACHMARHI TRIP FORM</p></td>
+        </table>
+          
+        </div>
+      </header>
+          <div class="container">
+            <form id="survey-form" name="form1" action="trip.php" method="post" onsubmit="return validate()">
+              
+              <div class="labels">
+                <label id="name-label">Full Name</label></div>
+              <div class="input-tab">
+                <input class="input-field" type="text"  name="name" placeholder="Enter your name" required autofocus>
+                <span id="name"></span></div>
+               <div class="labels">
+                <label id="email-label" for="email">Email</label></div>
+              <div class="input-tab">
+                <input class="input-field" type="email" name="email" placeholder="email@email.com" required>
+                <span id="email"></span></div>
+              
+               <div class="labels">
+                <label id="number-label">Age</label></div>
+              <div class="input-tab">
+                <input class="input-field" type="number" name="age" placeholder="15" required>
+                <span id="age"></span></div>
+
+               <div class="labels">
+                <label id="number-label" for="number">Contact number</label></div>
+              <div class="input-tab">
+                <input class="input-field" type="number" name="contact" placeholder="Enter your contact number" required>
+                <span id="contact"></span></div>
+
+              <div class="labels">
+                <label id="name-label" for="name">Subject</label></div>
+              <div class="input-tab">
+                <input class="input-field" type="text"  name="subject" placeholder="Enter your subject" required autofocus>
+                <span id="subject"></span></div>
+
+                <div class="labels">
+                  <label id="name-label" for="name">Section</label></div>
+                <div class="input-tab">
+                  <input class="input-field" type="text" name="section" placeholder="Enter your section" required autofocus>
+                  <span id="section"></span></div>
+                
+                    <div class="labels">
+                      <label>Gender</label></div>
+                    <div class="input-tab">
+                      <select id="dropdown" name="gender">
+                        <option disabled value selected>Select an option</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        
+                      </select>
+                    <span id="gender"></span>
+                      </div>
+                    
+              
+              <div class="labels">
+                <label for="comments">Enter any other information here</label></div>
+              <div class="input-tab">
+                <textarea class="input-field" id="comments" name="other" rows="10" cols="40" placeholder="Your comments..."></textarea></div>
+
+              
+              <div class="btn">
+                <button id="submit" type="submit">Submit</button>
+              </div>
+              
+            </form>
+          </div>
+      
+      <footer>
+       
+            <p>&copy Naman Bhawsar</a></p>
+      </footer>
+      
+    
+</body>
+</html>
